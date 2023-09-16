@@ -1,0 +1,32 @@
+{
+  "name": "apilanchonete",
+  "version": "1.0.0",
+  "description": "restaurant system api",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/johnnyofoco/apiLanchonete.git"
+  },
+  "keywords": [
+    "api",
+    "backend",
+    "restaurant",
+    "orders",
+    "clients",
+    "products"
+  ],
+  "author": "Johnny Marlon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/johnnyofoco/apiLanchonete/issues"
+  },
+  "homepage": "https://github.com/johnnyofoco/apiLanchonete#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "mongoose": "^7.5.2"
+  }
+}

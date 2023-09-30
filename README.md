@@ -20,8 +20,6 @@ Este projeto faz parte do teste para vaga de emprego, com enunciado retirado do 
 5. Configurei o arquivo do servidor: server.js (porta, definições de CORS, uso de JSON, definição de rotas)
 6. No diretório database, criei o arquivo db que possui um metódo para estabelecer a conexão com o banco de dados
 7. Define as models(Collections="tabelas") baseado nas entidades descritas no enunciado
-
---->[PAREIAQUI]
 8. Criei os arquivos controllers responsavéis pelos métodos de inserção, remoção e exclusão (já que o projeto não pede edição)
 9. Criei nas rotas os endpoints e com seus respectivos verbos HTTP (GET, POST e DELETE)
 10. Com o backend estruturado, iniciei o projeto FRONT-END = Painel administrativo que consome essa API (Ler o readme do repositório: https://github.com/johnnyofoco/frontLachonete.git)

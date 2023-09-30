@@ -1,14 +1,37 @@
-const express = require('express')
-const app = express()
+const express = require("express");
+const cors = require("cors");
 
-const PORT = process.env.port || 3000
+const routes = require('./routes/routes')
 
+const db = require("./database/db");
 
-app.get('/api', (req, res)=>{
-    res.send('<h1>API online</h2>')
+const app = express();
+
+db.connect();
+
+const allowedOrigins = ["http://localhost:3000", "http://www.app.com.br"];
+
+app.use(
+  cors({
+    origin: function (origin, callback) {
+      let allowed = true;
+
+      if (!origin || origin === null) allowed = true;
+
+      if (!allowedOrigins.includes(origin)) allowed = false;
+
+      callback(null, allowed);
+    },
+  })
+);
+
+app.use(express.json());
+
+app.use("/api", routes);
+
+app.use('/api', (req, res)=>{
+    res.send('<h1>API is running</h1>')
 })
 
-
-app.listen(PORT, ()=>{
-    console.log(`Server is running in port: ${PORT}`)
-})
+const port = process.env.PORT || 3000;
+app.listen(port, () => console.log(`Server is listening on port ${port}...`));

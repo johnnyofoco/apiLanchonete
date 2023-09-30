@@ -18,9 +18,10 @@ Este projeto faz parte do teste para vaga de emprego, com enunciado retirado do 
 3. Escolhi o banco de dados MongoDB 
 4. Instalei as dependencias do projeto: 
 5. Configurei o arquivo do servidor: server.js (porta, definições de CORS, uso de JSON, definição de rotas)
----------------------->
 6. No diretório database, criei o arquivo db que possui um metódo para estabelecer a conexão com o banco de dados
 7. Define as models(Collections="tabelas") baseado nas entidades descritas no enunciado
+
+--->[PAREIAQUI]
 8. Criei os arquivos controllers responsavéis pelos métodos de inserção, remoção e exclusão (já que o projeto não pede edição)
 9. Criei nas rotas os endpoints e com seus respectivos verbos HTTP (GET, POST e DELETE)
 10. Com o backend estruturado, iniciei o projeto FRONT-END = Painel administrativo que consome essa API (Ler o readme do repositório: https://github.com/johnnyofoco/frontLachonete.git)
@@ -38,7 +39,6 @@ Para executar o projeto em modo local, é necessário instalar:
  * GIT [OPCIONAL]
 
 1.Baixe ou clone o repositório FRONT-END: https://github.com/johnnyofoco/frontLachonete.git 
-
 2.Baixe ou clone o repositório BACK-END: https://github.com/johnnyofoco/apiLanchonete.git
 
 Obs: Para clonar é necessário ter instalado o git em seu sistema operacional
@@ -50,6 +50,6 @@ Obs: Para clonar é necessário ter instalado o git em seu sistema operacional
 
 4.Ainda no terminal execute o seguinte comando: npm run dev  (Este comando irá inicializar o servidor da API)
 
-4.Para testar, abra o navegador e digite na url: http://localhost:3000/api
+5.Para testar, abra o navegador e digite na url: http://localhost:3000/api
 
-5.Estando tudo ok, acesse o diretório FRONT-END, e abra o arquivo index.html
+6.Estando tudo ok, acesse o diretório FRONT-END, e abra o arquivo index.html
